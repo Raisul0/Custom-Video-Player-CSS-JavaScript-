@@ -58,7 +58,7 @@ function changeVolume(){
     }
 }
 
-var vidVol;
+var vidVol=0.4;
 function muteVolume(){
 
     if(vid.volume!=0){
