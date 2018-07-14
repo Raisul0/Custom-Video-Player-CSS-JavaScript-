@@ -1,0 +1,120 @@
+Body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #334621;
+}
+
+#frame{
+    border:1px solid black;
+    height: 400px;
+    width: 650px;
+    background-image: url(images.png);
+    background-size: 100% 100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+
+#main{
+    padding:0px;
+    width: 582px;
+    height: 335px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:9;
+    overflow: hidden;
+}
+
+#videoPanel{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+#controls{
+    height:40px;
+    width:97%;
+    padding: 10px;
+    position: absolute;
+    top:107%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s;
+}
+
+#main:hover #controls{
+    top:92%;
+
+}
+#seek-bar{
+    width: 100%;
+    height: 8px;
+    background-color: rgb(13, 90, 134);
+    display: flex;
+    position: absolute;
+    top:0px;
+    left:0px;
+    cursor: pointer;
+}
+
+#displaytime
+{   content: "00:00";
+    height: 15px;
+    width:50px;
+    background-color: white;
+    position: absolute;
+    top:79%;
+    opacity: 0.0;
+    text-align: center;
+    font-family: monospace;
+}
+
+
+#fill{
+    height: 8px;
+    background-color: #DBA74A;
+}
+
+#currentTime{
+    font-family: monospace;
+    font-size: 14px;
+    color: #DBA74A;
+}
+#plyBtn{
+    cursor: pointer;
+}
+
+#back10{
+    cursor: pointer;
+}
+#for10{
+    cursor: pointer;
+}
+
+#speaker{
+    cursor: pointer;
+}
+
+
+input[type=range]{
+    -webkit-appearance: none !important;
+    background-color: #666;
+    height: 10px;
+    border-radius: 4px;
+    outline:none;
+    cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb{
+    -webkit-appearance: none !important;
+    background-color: #DBA74A;
+    height:15px;
+    width:15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
